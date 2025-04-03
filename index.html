@@ -9,7 +9,7 @@
   <!--npx @tailwindcss/cli -i styles.css -o finalstyles.css --watch-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="flex justify-center items-center h-screen bg-gray-800 font-mono text-sky-200">
+<body class="flex flex-col justify-center items-center min-h-screen bg-gray-800 font-mono text-sky-200">
   
   <div class="flex flex-col w-4/5 lg:w-3/5 border-black bg-gray-700 rounded-md p-3 shadow-md shadow-sky-200 cv__main">
     <!--ARREGLAR EL HEADER-->
@@ -65,13 +65,18 @@
         <i class="fa-solid fa-greater-than hover:text-orange-400 hover:rotate-90 transition-transform mb-3 mb-3" id="btn-proyectos"></i>
       </div>
 
-      <div id="box-proyectos">
-
-        
-
-      </div>
+      <div id="box-proyectos"></div>
     </div>
 
+  </div>
+
+  <div class="flex flex-col sm:flex-row items-center text-sky-200/25 gap-2 mt-5">
+    <p>&copy; Adrián Estévez Salamanca</p>
+    <div class="flex flex-row gap-1 ms-3">
+      <i class="fa-brands fa-html5 hover:text-orange-600"></i>
+      <i class="fa-brands fa-css hover:text-cyan-400"></i>
+      <i class="fa-brands fa-js hover:text-yellow-300"></i>
+    </div>
   </div>
 
   <script type="module" src="main.js"></script>

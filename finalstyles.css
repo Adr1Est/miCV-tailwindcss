@@ -221,6 +221,12 @@
   .ms-1 {
     margin-inline-start: calc(var(--spacing) * 1);
   }
+  .ms-2 {
+    margin-inline-start: calc(var(--spacing) * 2);
+  }
+  .ms-3 {
+    margin-inline-start: calc(var(--spacing) * 3);
+  }
   .me-1 {
     margin-inline-end: calc(var(--spacing) * 1);
   }
@@ -232,6 +238,12 @@
   }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
+  }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-auto {
+    margin-top: auto;
   }
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
@@ -265,6 +277,9 @@
   }
   .h-screen {
     height: 100vh;
+  }
+  .min-h-screen {
+    min-height: 100vh;
   }
   .w-1 {
     width: calc(var(--spacing) * 1);
@@ -430,6 +445,12 @@
   }
   .text-sky-200 {
     color: var(--color-sky-200);
+  }
+  .text-sky-200\/25 {
+    color: color-mix(in srgb, oklch(90.1% 0.058 230.902) 25%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-sky-200) 25%, transparent);
+    }
   }
   .text-sky-400 {
     color: var(--color-sky-400);
