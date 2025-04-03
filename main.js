@@ -1,11 +1,14 @@
 let mainBox = document.querySelector("#main-content");
 let btnFormacion = document.querySelector("#formacion");
 let btnExperiencia = document.querySelector("#exp");
+let btnProyectos = document.querySelector("#btn-proyectos");
+let boxProyectos = document.querySelector("#box-proyectos");
 
 //CLASES
 let mainContainerClass = "w-full flex flex-col md:flex-row justify-between p-1 gap-1 p-3 cv__main--body-content";
 let btnRotated = "fa-solid fa-greater-than hover:text-orange-400 rotate-90 mb-3";
 let btnDefault = "fa-solid fa-greater-than hover:text-orange-400 hover:rotate-90 transition-transform mb-3";
+let boxProyectosClass = "flex flex-col sm:flex-row w-full justify-between gap-1 mb-3 cv__main--projects-box";
 
 //HTML
 let formacionHTML = `<div class="w-full lg:w-1/3 shadow-sm shadow-sky-200 hover:shadow-lg transition-shadow duration-300 rounded-md p-3">
@@ -116,6 +119,58 @@ let experienciaHTML = `<div class="w-full lg:w-1/3 shadow-sm shadow-sky-200 hove
         </div>
       </div>`;
 
+let proyectosHTML = `<div class="flex flex-col justify-center w-full lg:w-1/4 p-3 rounded-md hover:shadow-lg shadow-sky-200 transition-shadow duration-300 cv__main--projects-box-item">
+          <div class="aspect-1/1 mb-1">
+            <a href="https://adrian-estevez-bootstrap-ig-feed.netlify.app/" target="_blank">
+              <img src="./img/proyecto-feed-ig.png" class="w-full h-full hover:scale-105 transition-transform object-cover rounded-md" alt="">
+            </a>
+          </div>
+          <h4 class="text-center">Clon Feed de Instagram</h4>
+          <div class="w-full flex flex-row justify-center gap-1">
+            <i class="fa-brands fa-html5 hover:text-orange-600"></i>
+            <i class="fa-brands fa-bootstrap hover:text-purple-600"></i>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-center w-full lg:w-1/4 p-3 rounded-md hover:shadow-lg shadow-sky-200 transition-shadow duration-300 cv__main--projects-box-item">
+          <div class="aspect-1/1 mb-1">
+            <a href="#" target="_blank">
+              <img src="./img/default.jpg" class="w-full h-full hover:scale-105 transition-transform object-cover rounded-md" alt="">
+            </a>
+          </div>
+          <h4 class="text-center">WIP!</h4>
+          <div class="w-full flex flex-row justify-center gap-1">
+            <i class="fa-brands fa-html5 hover:text-orange-600"></i>
+            <i class="fa-brands fa-css hover:text-cyan-400"></i>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-center w-full lg:w-1/4 p-3 rounded-md hover:shadow-lg shadow-sky-200 transition-shadow duration-300 cv__main--projects-box-item">
+          <div class="aspect-1/1 mb-1">
+            <a href="#">
+              <img src="./img/default.jpg" class="w-full h-full hover:scale-105 transition-transform object-cover rounded-md" alt="">
+            </a>
+          </div>
+          <h4 class="text-center">WIP!</h4>
+          <div class="w-full flex flex-row justify-center gap-1">
+            <i class="fa-brands fa-html5 hover:text-orange-600"></i>
+            <i class="fa-brands fa-css hover:text-cyan-400"></i>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-center w-full lg:w-1/4 p-3 rounded-md hover:shadow-lg shadow-sky-200 transition-shadow duration-300 cv__main--projects-box-item">
+          <div class="aspect-1/1 mb-1">
+            <a href="#">
+              <img src="./img/default.jpg" class="w-full h-full hover:scale-105 transition-transform object-cover rounded-md" alt="">
+            </a>
+          </div>
+          <h4 class="text-center">WIP!</h4>
+          <div class="w-full flex flex-row justify-center gap-1">
+            <i class="fa-brands fa-html5 hover:text-orange-600"></i>
+            <i class="fa-brands fa-css hover:text-cyan-400"></i>
+          </div>
+        </div>`;
+
 window.onload = () => {
   mainBox.innerHTML = "";
 }
@@ -152,5 +207,15 @@ function manejoBotones(btn) {
 }
 
 btnExperiencia.addEventListener("click", () => { manejoBotones(btnExperiencia); });
-
 btnFormacion.addEventListener("click", () => { manejoBotones(btnFormacion); });
+btnProyectos.addEventListener("click", () => {
+  btnProyectos.className = (btnProyectos.className === btnRotated) ? btnDefault : btnRotated;
+
+  if (btnProyectos.className === btnRotated) {
+    boxProyectos.innerHTML = proyectosHTML;
+    boxProyectos.className = boxProyectosClass;
+  } else {
+    boxProyectos.innerHTML = "";
+    boxProyectos.className = "";
+  }
+});
