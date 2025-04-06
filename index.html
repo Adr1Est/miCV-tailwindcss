@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV con Tailwind CSS</title>
+  <title>CV - Adrián Estévez</title>
   <!--Realizado por Adrián Estévez Salamanca-->
   <link rel="stylesheet" href="finalstyles.css"><!--TailwindCSS-->
   <!--npx @tailwindcss/cli -i styles.css -o finalstyles.css --watch-->
@@ -12,10 +12,10 @@
 <body class="flex flex-col justify-center items-center min-h-screen bg-gray-800 font-mono text-sky-200">
   
   <div class="flex flex-col w-4/5 lg:w-3/5 border-black bg-gray-700 rounded-md p-3 shadow-md shadow-sky-200 cv__main">
-    <!--ARREGLAR EL HEADER-->
+  
     <div class="flex flex-row justify-between w-full border-b-2 border-sky-200 mb-3 cv__main--head">
-      <div class="w-2/3 mb-3 cv__main--head-item">
-        <h1 class="w-full font-bold text-4xl">&lt;Adrián Estévez Salamanca/&gt;</h1>
+      <div class="w-2/3 mb-3 cv__main--head-item pe-1">
+        <h1 class="w-full font-bold text-4xl break-words">&lt;Adrián Estévez Salamanca/&gt;</h1>
       </div>
       <div class="w-1/3 flex flex-col mb-3 cv__main--head-item">
         <div class="w-full flex flex-row items-center gap-1 cv__main--head-item-email">
@@ -24,11 +24,11 @@
         </div>
         <div class="w-full flex flex-row items-center gap-1 cv__main--head-item-phone">
           <i class="fa-solid fa-mobile"></i>
-          <p class="w-full text-sm lg:text-base">+34 660487026</p>
+          <p class="w-full text-sm lg:text-base break-words pe-4">+34 660487026</p>
         </div>
         <div class="w-full flex flex-row items-center gap-1 cv__main--head-item-home">
           <i class="fa-solid fa-house"></i>
-          <p class="w-full text-sm lg:text-base">Madrid, España</p>
+          <p class="w-full text-sm lg:text-base break-words pe-4">Madrid, España</p>
         </div>
         <div class="w-full flex flex-row items-center gap-1 mt-2 cv__main--head-item-links">
           <a href="https://github.com/Adr1Est" target="_blank">
@@ -45,16 +45,16 @@
       <div class="flex flex-col sm:flex-row justify-between gap-1 w-full cv__main--body-titles">
         <div class="flex flex-row items-center gap-2 w-1/2">
           <h2 class="font-bold text-xl ml-1 mb-3">Formación</h2>
-          <i class="fa-solid fa-greater-than hover:text-orange-400 hover:rotate-90 transition-transform mb-3" id="formacion"></i>
+          <i class="fa-solid fa-greater-than hover:text-orange-400 hover:rotate-90 transition-transform mb-3 cursor-pointer" id="formacion"></i>
         </div>
         <div class="flex flex-row items-center gap-2 w-1/2">
           <h2 class="font-bold text-xl ml-1 mb-3">Experiencia</h2>
-          <i class="fa-solid fa-greater-than hover:text-orange-400 hover:rotate-90 transition-transform mb-3 mb-3" id="exp"></i>
+          <i class="fa-solid fa-greater-than hover:text-orange-400 hover:rotate-90 transition-transform mb-3 mb-3 cursor-pointer" id="exp"></i>
         </div>
       </div>
 
       <div id="main-content">
-      <!--El contenido de este div debe cambiar-->
+        
       </div>
 
     </div>
@@ -62,7 +62,7 @@
     <div class="flex flex-col w-full border-b-2 border-sky-200 cv__main--projects">
       <div class="flex flex-row items-center gap-2 w-full cv__main--projects-head">
         <h2 class="font-bold text-xl ml-1 mb-3">Últimos proyectos</h2>
-        <i class="fa-solid fa-greater-than hover:text-orange-400 hover:rotate-90 transition-transform mb-3 mb-3" id="btn-proyectos"></i>
+        <i class="fa-solid fa-greater-than hover:text-orange-400 hover:rotate-90 transition-transform mb-3 mb-3 cursor-pointer" id="btn-proyectos"></i>
       </div>
 
       <div id="box-proyectos"></div>
@@ -73,9 +73,18 @@
   <div class="flex flex-col sm:flex-row items-center text-sky-200/25 gap-2 mt-5">
     <p>&copy; Adrián Estévez Salamanca</p>
     <div class="flex flex-row gap-1 ms-3">
-      <i class="fa-brands fa-html5 hover:text-orange-600"></i>
-      <i class="fa-brands fa-css hover:text-cyan-400"></i>
-      <i class="fa-brands fa-js hover:text-yellow-300"></i>
+      <div class="group">
+        <i title="HTML5" class="fa-brands fa-html5 hover:text-orange-600"></i>
+        <p class="absolute hidden group-hover:block group-hover:text-orange-600">HTML5</p>
+      </div>
+      <div class="group">
+        <i title="TailwindCSS" class="fa-brands fa-css hover:text-cyan-400"></i>
+        <p class="absolute hidden group-hover:block group-hover:text-cyan-400">TailwindCSS</p>
+      </div>
+      <div class="group">
+        <i title="JavaScript" class="fa-brands fa-js hover:text-yellow-300"></i>
+        <p class="absolute hidden group-hover:block group-hover:text-yellow-300">JavaScript</p>
+      </div>
     </div>
   </div>
 

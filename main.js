@@ -6,8 +6,8 @@ let boxProyectos = document.querySelector("#box-proyectos");
 
 //CLASES
 let mainContainerClass = "w-full flex flex-col md:flex-row justify-between p-1 gap-1 p-3 cv__main--body-content";
-let btnRotated = "fa-solid fa-greater-than hover:text-orange-400 rotate-90 mb-3";
-let btnDefault = "fa-solid fa-greater-than hover:text-orange-400 hover:rotate-90 transition-transform mb-3";
+let btnRotated = "fa-solid fa-greater-than hover:text-orange-400 rotate-90 mb-3 cursor-pointer";
+let btnDefault = "fa-solid fa-greater-than hover:text-orange-400 hover:rotate-90 transition-transform mb-3 cursor-pointer";
 let boxProyectosClass = "flex flex-col sm:flex-row w-full justify-between gap-1 mb-3 cv__main--projects-box";
 
 //HTML
