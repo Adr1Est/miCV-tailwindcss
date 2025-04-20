@@ -1,8 +1,8 @@
 # miCV-tailwindcss
 
-CV realizado con: HTML5 y TailwindCSS
+CV realizado con: HTML5, TailwindCSS y JavaScript.
 
 Observaciones:
   - 
 
-Última actualización: 06/04/2025
+Última actualización: 20/04/2025
