@@ -121,20 +121,21 @@ let experienciaHTML = `<div class="w-full lg:w-1/3 shadow-sm shadow-sky-200 hove
 
 let proyectosHTML = `<div class="flex flex-col justify-center w-full lg:w-1/4 p-3 rounded-md hover:shadow-lg shadow-sky-200 transition-shadow duration-300 cv__main--projects-box-item">
           <div class="aspect-1/1 mb-1">
-            <a href="https://adrian-estevez-bootstrap-ig-feed.netlify.app/" target="_blank">
-              <img src="./img/proyecto-feed-ig.png" class="w-full h-full hover:scale-105 transition-transform object-cover rounded-md" alt="">
+            <a href="https://adr1est.github.io/rock-paper-scissors-lizard-spock_aes/" target="_blank">
+              <img src="./img/proyecto-pptls.png" class="w-full h-full hover:scale-105 transition-transform object-cover rounded-md" alt="">
             </a>
           </div>
-          <h4 class="text-center">Clon Feed de Instagram</h4>
+          <h4 class="text-center">Piedra, papel, tijera, lagarto, spock!</h4>
           <div class="w-full flex flex-row justify-center gap-1">
-            <i class="fa-brands fa-html5 hover:text-orange-600"></i>
-            <i class="fa-brands fa-bootstrap hover:text-purple-600"></i>
+            <i title="HTML5" class="fa-brands fa-html5 hover:text-orange-600"></i>
+            <i title="TailwindCSS" class="fa-brands fa-css hover:text-cyan-400"></i>
+            <i title="JavaScript" class="fa-brands fa-js hover:text-yellow-300"></i>
           </div>
         </div>
 
         <div class="flex flex-col justify-center w-full lg:w-1/4 p-3 rounded-md hover:shadow-lg shadow-sky-200 transition-shadow duration-300 cv__main--projects-box-item">
           <div class="aspect-1/1 mb-1">
-            <a href="#" target="_blank">
+            <a href="https://github.com/Adr1Est" target="_blank">
               <img src="./img/default.jpg" class="w-full h-full hover:scale-105 transition-transform object-cover rounded-md" alt="">
             </a>
           </div>
@@ -147,7 +148,7 @@ let proyectosHTML = `<div class="flex flex-col justify-center w-full lg:w-1/4 p-
 
         <div class="flex flex-col justify-center w-full lg:w-1/4 p-3 rounded-md hover:shadow-lg shadow-sky-200 transition-shadow duration-300 cv__main--projects-box-item">
           <div class="aspect-1/1 mb-1">
-            <a href="#">
+            <a href="https://github.com/Adr1Est" target="_blank">
               <img src="./img/default.jpg" class="w-full h-full hover:scale-105 transition-transform object-cover rounded-md" alt="">
             </a>
           </div>
@@ -160,7 +161,7 @@ let proyectosHTML = `<div class="flex flex-col justify-center w-full lg:w-1/4 p-
 
         <div class="flex flex-col justify-center w-full lg:w-1/4 p-3 rounded-md hover:shadow-lg shadow-sky-200 transition-shadow duration-300 cv__main--projects-box-item">
           <div class="aspect-1/1 mb-1">
-            <a href="#">
+            <a href="https://github.com/Adr1Est" target="_blank">
               <img src="./img/default.jpg" class="w-full h-full hover:scale-105 transition-transform object-cover rounded-md" alt="">
             </a>
           </div>
